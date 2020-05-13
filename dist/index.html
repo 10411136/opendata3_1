@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 天氣opendata ver3_1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta property="og:image" content="https://s.newtalk.tw/album/news/115/5a8410cb10e3f.JPG"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="week_weather">
+      <button type="button" class="btn btn-primary" id="weekweatherClose">關閉視窗</button>
+  <div id="week_weather_content"></div>
+  <div class="chart-container" id="chart_container">
+  </div> 
+
+</div>
+<div id="popWindow">
+  <div id="tag"></div>
+  <div id="popWindow_tite_paragraph">
+    <div id="div_popWindow_title">
+      <h3 id="popWindow_title">您好</h3>
+    </div>
+    <p id="popWindow_paragraph">
+      本站 資料來源: 政府資料開放平台opendata<br>
+      點擊<span style="font-weight: bold;"> 縣市框 </span>可以查看一週天氣圖表
+    </p>
+    <p id="popWindow_paragraph2">
+      請勿作為營利之用途   ver 3.1 <br>  © 2020 YLL. All Rights Reserved
+    </p>
+    
+    <icon> <!-- 水母 -->
+        <div class="center">
+          <div class="head-phantom">
+            <div class="content-pop">
+              <div class="pop">
+              </div>
+              <div class="pop">
+              </div>
+              <div class="pop">
+              </div>
+              <div class="pop">
+              </div>
+              <div class="pop">
+              </div>
+              <div class="pop">
+              </div>
+              <div class="pop">
+              </div>
+              <div class="pop">
+              </div>
+            </div>
+            <div class="ring"></div>
+            <div class="face">
+              <div class="eyes_1"></div>
+              <div class="eyes_2"></div>
+              <div class="po"></div>
+              <div class="po_1"></div>
+              <div class="lips"></div>
+              <div class="lips2"></div>
+            </div>
+          </div>
+          <div class="clothes">
+            <div class="cloth"></div>
+            <div class="cloth"></div>
+            <div class="cloth"></div>
+            <div class="cloth"></div>
+            <div class="deco"></div>
+            <div class="deco_1"></div>
+            <div class="deco_2"></div>
+          </div>
+        </div>
+    </icon>
+  </div>
+  <div class="btn btnClose"><button type="button" class="btn btn-info" id="close">關閉</button>
+  </div>
+  <div class="popWindow_bottom">
+    
+  </div>
+</div>
+
+<!--  -->
+<div id="picture">55</div>
+<div id="data_title">
+  <p id="datasetDescription"></p>
+</div>
+<div class="component demo">
+  <div class="list-group list-group-horizontal-sm">
+    <a class="list-group-item list-group-item-action active" href="#tab-north" data-toggle="list">北部</a>
+    <a class="list-group-item list-group-item-action" href="#tab-east" data-toggle="list">東部</a>
+    <a class="list-group-item list-group-item-action" href="#tab-west" data-toggle="list">中部</a>
+    <a class="list-group-item list-group-item-action" href="#tab-south" data-toggle="list">南部</a>
+    <a class="list-group-item list-group-item-action" href="#tab-oland" data-toggle="list">外島</a>
+  </div>
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="tab-north"></div>
+    <div class="tab-pane fade" id="tab-east"> </div>
+    <div class="tab-pane fade" id="tab-west"></div>
+    <div class="tab-pane fade" id="tab-south"></div>
+    <div class="tab-pane fade" id="tab-oland"></div>
+  </div>
+</div>
+<!--  -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
